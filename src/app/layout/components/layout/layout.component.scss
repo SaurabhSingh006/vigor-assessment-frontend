@@ -1,11 +1,13 @@
 .container {
     background-image: url('./../../../../assets/img/Black\ Background.png');
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
+    position: relative;
 
     nav {
         padding: 2.5rem 6rem;
@@ -48,13 +50,70 @@
         line-height: 5.5rem;
         font-weight: 600;
 
-        margin-top: 7rem;
+        margin-top: 6rem;
 
         span {
             background-color: transparent;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: white;
+        }
+    }
+
+    .rocket {
+        background-image: url('./../../../../assets/img/Vigor\ Rocket6k\ 1.png');
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: -150px;
+        background-repeat: no-repeat;
+        transform: scale(0.7, 0.7);
+        position: absolute;
+        bottom: 0%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //padding: 3.5rem;
+
+        &> div {
+            margin: 4rem;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .arrow_con {
+                .arrow {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+
+            .text {
+                margin: 0px 1rem;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+
+        .right {
+            button {
+                border: none;
+                padding: 1rem 1.3rem;
+                background: linear-gradient(90deg, #0358AC 0%, #2D2D86 100%);
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 27px;
+                color: white;
+                font-weight: 600;
+            }
         }
     }
 }
